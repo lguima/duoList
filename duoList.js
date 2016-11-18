@@ -204,11 +204,11 @@
         });
 
         if (options.dblClick){
-            $origin.find('option').live('dblclick', function(){
+            $origin.find('option').on('dblclick', function(){
                 $add.trigger('click');
             });
 
-            $destiny.find('option').live('dblclick', function(){
+            $destiny.find('option').on('dblclick', function(){
                 $remove.trigger('click');
             });
         }
